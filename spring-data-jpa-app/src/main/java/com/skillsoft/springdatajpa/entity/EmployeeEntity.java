@@ -1,4 +1,4 @@
-package com.skillsoft.springdatajpa;
+package com.skillsoft.springdatajpa.entity;
 
 import lombok.*;
 
@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
+@Builder
 @Getter
 @Setter
 @NoArgsConstructor
