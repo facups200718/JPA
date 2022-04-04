@@ -1,5 +1,7 @@
 package com.skillsoft.springdatajpa.entity;
 
+import com.sun.istack.NotNull;
+import com.sun.istack.Nullable;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -12,8 +14,10 @@ import javax.persistence.Id;
 @Setter
 @NoArgsConstructor
 @RequiredArgsConstructor
+@AllArgsConstructor
 public class EmployeeEntity {
     @Id
+    @Nullable
     @GeneratedValue
     private Long id;
     @NonNull
